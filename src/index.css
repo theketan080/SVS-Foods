@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+html,
+body {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* HIDE SCROLLBAR */
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* SWIGGY RIDER ANIMATION */
+
+.swiggy-rider {
+  offset-path: path(
+  "M50 430 C90 360 130 300 190 250 C240 210 260 170 290 130"
+);
+
+  animation: swiggyMove 6s linear infinite;
+
+  offset-rotate: 0deg;
+}
+
+@keyframes swiggyMove {
+  0% {
+    offset-distance: 100%;
+  }
+
+  100% {
+    offset-distance: 0%;
+  }
+}
+@keyframes founderReveal {
+
+  0% {
+    opacity: 0;
+    transform: scale(1.12) translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1.08) translateY(16px);
+  }
+
+}
+
+.animate-founder {
+  animation: founderReveal 1.2s ease forwards;
+}
