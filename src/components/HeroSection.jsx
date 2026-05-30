@@ -24,8 +24,7 @@ const HeroSection = () => {
               </span>
 
             </div>
-
-           \
+            
             <h1 className="font-black tracking-tight leading-[0.9] text-[56px] sm:text-[75px] md:text-[95px]">
 
               Crafting The
